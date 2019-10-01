@@ -1,2 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~normalize.css';
+
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat-Regular.ttf);  
+}
+
+body {
+    font-family: 'Montserrat', Geneva, Trebuchet MS, sans-serif;
+}
+
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+} 
+
+.relevant-view-container{
+    // display: flex;
+	// flex-wrap: wrap;
+	$scale: 40;
+	background-color: rgb($scale, $scale, $scale);
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.section-container {
+    display: block;
+    margin: 0;
+	position: relative;
+}
+
+
+.lapsusdev-capuccino {
+	background-color: rgb(226,211,154) !important;
+}
+
+.lapsusdev-velvet { 
+	background-color: rgb(157,47,77) !important;
+}
+
+.lapsusdev-latte {
+	background-color: rgb(226,220,214) !important;
+}
+
+.lapsusdev-coffee {
+	background-color: rgb(93,60,76) !important;
+}
+
+.lapsusdev-espresso {
+	background-color: rgb(136,114,116) !important;
+}

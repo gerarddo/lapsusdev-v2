@@ -1,0 +1,20 @@
+#contact {
+    height: 100%;
+    .contact-info-container {
+        padding: 20px;
+        color: white;
+        .contact-info-cell {
+            padding: 20px;
+            p {
+                width: 100%;
+                display: block;
+                color: rgb(200,200,200)
+            }
+            a {
+                text-decoration: underline;
+                color: rgb(200,200,200)
+            }
+        }
+    }
+}
+

@@ -1,0 +1,66 @@
+#about {
+
+    $scale: 40;
+    background-color: rgb($scale, $scale, $scale);
+
+    .about-info-container {
+        display: block;
+        padding: {
+            top: 40px;
+            left: 40px;
+            right: 40px;
+        }
+        text-align: justify;
+        color: white;
+        p {
+            font-size: 1.3em;
+            line-height: 2.5;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .break-line { 
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 3px solid steelblue;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            padding: 0; 
+            max-width: 400px;    
+        }
+    }
+
+    .about-whatido-container {
+        display: block;
+        padding: 40px;
+        color: rgb(200,200,200);
+        h3 {
+            color: white;
+        }
+    }
+
+    .about-interesting-container {
+        display: block;
+        padding: 40px;
+        h3 {
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(200,200,200);
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+
+}
+
