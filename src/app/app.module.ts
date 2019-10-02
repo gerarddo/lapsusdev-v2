@@ -10,6 +10,9 @@ import { ContactComponent } from './home/contact/contact.component';
 import { AboutComponent } from './home/about/about.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectComponent } from './portfolio/project/project.component';
+import { ProjectListComponent } from './portfolio/project-list/project-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HeaderComponent,
     HomeComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    PortfolioComponent,
+    ProjectComponent,
+    ProjectListComponent
   ],
   imports: [
     BrowserModule,
