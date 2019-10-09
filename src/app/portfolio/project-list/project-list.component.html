@@ -1,7 +1,25 @@
-<h2>My Projetcs</h2>
-<ul class="projects">
-    <li *ngFor="let project of projects">         
-        <app-project [project]="project"></app-project>
-    </li>
-</ul>
+
+<div 
+    class='project-list'
+    fxLayout
+    fxLayoutAlign="center"
+    fxLayout="row wrap" 
+    fxLayout.sm="column" 
+    fxLayout.xs="column" 
+    [style.height.px]="myInnerHeight"
+    >
+
+    <!-- <cdk-virtual-scroll-viewport itemSize="200" class="viewport"> -->
+            <!--TODO: Add material card-->
+
+            <!-- <cdk-virtual-scroll-viewport [itemSize]="1000"> -->
+                    <app-project 
+                    fxFlex.gt-sm = "50%"
+                    *ngFor="let project of projects" 
+                    [project]="project"></app-project>
+            <!-- </cdk-virtual-scroll-viewport> -->
+        <!-- </cdk-virtual-scroll-viewport> -->
+
+</div>
+
 

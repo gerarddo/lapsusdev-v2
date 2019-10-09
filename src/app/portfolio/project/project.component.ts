@@ -9,7 +9,9 @@ export class ProjectComponent implements OnInit {
 
   @Input() project: any;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

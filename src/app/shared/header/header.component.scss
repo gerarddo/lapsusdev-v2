@@ -6,36 +6,125 @@
         left: 0;
         right: 0; 
         display: block;
-        padding: 40px;
-        color: white;
+        padding: {
+            left: 25px;
+            right: 25px;
+            top: 25px;
+            bottom: 25px;
+        }
+        max-width: 1400px;
+        margin: auto;
         font-size: 1.5em;
+        .header-sitename {
+            font-size: 1.5em; // this makes a 1.5x1.5 sizing efect
+        }
+
+        // display: flex;
+        // flex-wrap: wrap;
     }
-    span {
+    .header-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    // .header-img-container img {
+    //     $header-img-height: 73px;
+    //     display:block;
+    //     border: 3px solid white;
+    //     border: {
+    //         radius: $header-img-height/2;
+    //     }
+    //     max-height: $header-img-height;
+    //     margin: {
+    //         right: 20px;
+    //     }
+    // }
+
+    .img-wrapper {
+        $header-img-height: 73px;
+        display:block;
+        border: 3px solid white;
+        border: {
+            radius: $header-img-height/2;
+        }
+        height: $header-img-height;
+        width: $header-img-height;
+        margin: {
+            right: 20px;
+        }
+        overflow: hidden;
+    }
+
+    .bolimg {
+        background: url('../../../assets/images/me_small.jpg') no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        transition: 2s ease-out;
+    }
+
+    
+    .header-description  {
         font-size: 18px;
-        color: rgb(200,200,200);
-    }
-    p {
-        color: rgb(200,200,200)
+        color: rgb(150,150,150);
+        margin: {
+            top: 20px;
+            bottom: 0px;
+        }
     }
     a {
         color: white;
         text-decoration: none;
     }
+    .navbar-container {
+        display: block;
+    }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     #header {
-        span {
+        .header-img-container {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        .header-img-container {
+            display: none;
+        }
+        .header-description  {
             display: none;
         }
         header {
             padding: {
-                top: 5px;
-                bottom: 5px;
+                top: 20px;
+                bottom: 20px;
                 left: 15px;
                 right: 15px;
             }
-            font-size: 0.5em;
         }
+    }
+}
+
+@media (max-width: 400px) {
+    
+
+    #header {
+        
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 260px) {
+    
+
+    #header {
+        header {
+            .header-sitename {
+                font-size: 1em; // this makes a 1.5x1.5 sizing efect
+            }
+        }
+
     }
 }

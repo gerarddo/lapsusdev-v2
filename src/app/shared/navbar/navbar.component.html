@@ -1,17 +1,22 @@
-<div id="navbar">
+
+<div 
+    id="navbar"
+    fxLayout
+    fxLayout="row"
+    fxLayoutAlign="space-evenly center">
 
 
-    <a routerLink="/" class='nav'>
-        <p>HOME</p>
+    <a routerLink="/home" class='nav' routerLinkActive='active-nav'>
+        <span>HOME</span>
     </a>
-    <a routerLink="/portfolio" class='nav'>
-        <p>PORTFOLIO</p>
+    <a routerLink="/portfolio" class='nav' routerLinkActive='active-nav'>
+        <span>PORTFOLIO</span>
     </a>
-    <ul>
+    <!-- <ul>
         <li routerLink="/portfolio/web" >WEB</li>
         <li routerLink="/portfolio/academic">ACADEMIC</li>
         <li routerLink="/portfolio/scientific">SCIENTIFIC</li>
-    </ul>
+    </ul> -->
     <!-- <a href="/contact" class='nav'>
         <p>CONTACT</p>
     </a>
@@ -19,3 +24,4 @@
         <p>ABOUT</p>
     </a> -->
 </div>
+<!-- https://tburleson-layouts-demos.firebaseapp.com/#/docs -->

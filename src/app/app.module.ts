@@ -9,10 +9,15 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { AboutComponent } from './home/about/about.component';
 
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { LazyLoadImageModule } from 'ng-lazyload-image'; // <-- import it
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectComponent } from './portfolio/project/project.component';
 import { ProjectListComponent } from './portfolio/project-list/project-list.component';
+import { ImageComponent } from './shared/image/image.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,12 +29,15 @@ import { ProjectListComponent } from './portfolio/project-list/project-list.comp
     AboutComponent,
     PortfolioComponent,
     ProjectComponent,
-    ProjectListComponent
+    ProjectListComponent,
+    ImageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    LazyLoadImageModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,20 +1,35 @@
 <section class="section-container" id="header" >
     
-    <header>
-        <h1>
-            <a routerLink="/">
-                lapsusdev 
-            </a> 
-            <span>
-                &nbsp;&nbsp;&nbsp;
-                full stack / science driven &nbsp;
-            </span>
-        </h1>
-        <p>
-            
-
-            
-        </p>
-
+    <header
+    fxLayout
+    fxLayout="row wrap">
+        <div 
+            class='header-main' 
+            fxFlex.xs="40%"
+            fxFlex.gt-xs="50%">
+            <div class='header-img-container'>
+                <div class="img-wrapper">
+                    <!-- <img src="./assets/images/me.jpg" alt=""> -->
+                    <div class="bolimg"></div>
+                </div>
+            </div>
+            <div >
+                <a class='header-sitename' routerLink="/">
+                    lapsusdev 
+                </a> 
+                <br>
+                <p class='header-description'>
+                    full stack / science driven &nbsp;
+                </p>
+            </div>
+        </div>
+        <div 
+            class='navbar-container'
+            fxFlex.xs="60%"
+            fxFlex.gt-xs="50%">
+            <app-navbar></app-navbar>
+        </div>
     </header>
 </section>
+
+

@@ -5,8 +5,19 @@
 <!-- https://codinglatte.com/posts/angular/angular-flex-layout-introduction/ -->
 <!-- https://github.com/angular/flex-layout/wiki/API-Documentation -->
 
-<app-header></app-header>
-<app-navbar></app-navbar>
-<!-- <app-home></app-home> -->
+<div 
+    class='app-container'
+    fxLayout
+    fxLayout = 'column'
+    fxFill>
+        <app-header></app-header>
+        <!-- <app-home></app-home> -->
+        
+        <div fxFlex>
+            <router-outlet ></router-outlet>
+        </div>
 
-<router-outlet></router-outlet>
+        
+        
+
+</div>

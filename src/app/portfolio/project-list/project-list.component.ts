@@ -21,7 +21,10 @@ export class ProjectListComponent implements OnInit {
   ngOnInit() {
     this.route.data.subscribe(data => this.category = (data.category));
     this.sub = this.getProjects(this.category);
+    this.myInnerHeight = window.innerHeight;
   }
+
+  myInnerHeight: any;
 
   projects: any[];
   

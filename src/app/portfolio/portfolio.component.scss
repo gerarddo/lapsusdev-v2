@@ -1,0 +1,22 @@
+.diagonal-split-background{
+  width: 100%;
+  display: block;
+  background-image: -webkit-linear-gradient(350deg, #9d2f4d 50%, #70263a 50%);
+  position: relative;
+}
+
+.obscure-layout {
+  display: block;
+  // top:0;
+  // z-index: 5;
+  background-color: rgba(200,200,200, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  
+}
+
+// #inner_fixed {
+//   height: 100px;
+//   background-color: grey;
+// }

@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~normalize.css';
 
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat-Regular.ttf);  
+}
+
 html {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -15,16 +20,18 @@ html {
             box-sizing: inherit;
 }
 
-
-@font-face {
-    font-family: Montserrat;
-    src: url(assets/fonts/Montserrat-Regular.ttf);  
-}
-
 body {
    font-family: 'Montserrat', Geneva, Trebuchet MS, sans-serif;
    font-size: 0.8em;
 }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 
 
 .clearfix {
@@ -47,6 +54,7 @@ body {
     margin: 0;
 	position: relative;
 }
+
 
 
 .lapsusdev-capuccino {

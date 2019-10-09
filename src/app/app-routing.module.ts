@@ -6,7 +6,7 @@ import { ProjectListComponent } from './portfolio/project-list/project-list.comp
 
 const routes: Routes = [
   { 
-    path: '', 
+    path: 'home', 
     component: HomeComponent 
   },
   { 
@@ -30,7 +30,7 @@ const routes: Routes = [
       }
     ]
   },
-  { path: '**', component: HomeComponent }
+  { path: '**',  redirectTo: '/home', }
 ];
 
 
