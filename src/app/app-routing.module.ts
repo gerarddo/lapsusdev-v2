@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectListComponent } from './portfolio/project-list/project-list.component';
+import { MenuComponent } from './portfolio/menu/menu.component';
 
 const routes: Routes = [
   { 
@@ -19,9 +20,9 @@ const routes: Routes = [
         data: {category: 'web'}
       },
       {
-        path: 'academic', 
+        path: 'theoric', 
         component: ProjectListComponent,
-        data: {category: 'academic'}
+        data: {category: 'theoric'}
       },
       {
         path: 'scientific', 

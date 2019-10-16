@@ -3,6 +3,9 @@
     $scale: 40;
     background-color: rgb($scale, $scale, $scale);
     height: 100%;
+    .about-content-container{
+        max-width: 930px;
+    }
     .about-info-container {
         display: block;
         padding: {

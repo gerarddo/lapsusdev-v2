@@ -1,9 +1,23 @@
 
-<div class="diagonal-split-background" >
+<div 
+  id='portfolio' 
+  class="diagonal-split-background" 
+  fxLayout 
+  fxLayout='row wrap' 
+  fxLayoutAlign='center start' 
+  fxFill>
+
+
+  <app-menu fxFlex='100%'></app-menu>
+
+  <router-outlet></router-outlet>
     <!-- <div class='obscure-layout inactive-layout'></div> -->
-    <router-outlet></router-outlet>
     
+
 </div>
+
+
+
 
 
 <!-- .flex-wrapper {

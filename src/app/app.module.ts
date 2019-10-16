@@ -16,6 +16,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectComponent } from './portfolio/project/project.component';
 import { ProjectListComponent } from './portfolio/project-list/project-list.component';
 import { ImageComponent } from './shared/image/image.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { MenuComponent } from './portfolio/menu/menu.component';
 
 
 
@@ -31,6 +33,8 @@ import { ImageComponent } from './shared/image/image.component';
     ProjectComponent,
     ProjectListComponent,
     ImageComponent,
+    FooterComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,

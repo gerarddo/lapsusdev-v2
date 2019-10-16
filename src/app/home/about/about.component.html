@@ -1,74 +1,80 @@
 <section class="section-container"     
     id="about"
     fxLayout
-    fxLayoutAlign="center"
+    fxLayoutAlign="end"
+
+>
+    <div class="about-content-container"
+    fxLayout
+    fxLayoutAlign="center start"
     fxLayout.xl="row wrap"
     fxLayout.lg="row wrap"
     fxLayout.md="column"
     fxLayout.sm="row wrap"
     fxLayout.xs="column">
-
-    <div class="about-info-container" fxFlex="100%">
-        <p>
-            Hello, I'm 
-            <a href="https://www.linkedin.com/in/gerardomijares/" target="_blank">
-                Gerardo Mijares
-            </a>
-        </p>
-        <span class="break-line"></span>
-        <p>
-            I'm aiming to develop projects with a focus on science-related applications and/or divulgation. This means my areas of interest go from full-stack web development to data science and visualization.
-        </p>
+        <div class="about-info-container" fxFlex="100%">
+            <p>
+                Hello, I'm 
+                <a href="https://www.linkedin.com/in/gerardomijares/" target="_blank">
+                    Gerardo Mijares
+                </a>
+            </p>
+            <span class="break-line"></span>
+            <p>
+                I'm aiming to develop projects with a focus on science-related applications and/or divulgation. This means my areas of interest go from full-stack web development to data science and visualization.
+            </p>
+        </div>
+        <div class="about-whatido-container" fxFlex="50%">
+            <h3>What I Do</h3>
+            <ul>
+                <li>
+                    <p>Web Development</p>
+                    <ul>
+                        <li>HTML / SCSS / Javascript</li>
+                        <li>PHP / Apache / MySQL</li>
+                        <li>.NET / C# / SQL Server</li>
+                        <li>MongoDB / Express / Angular 5+ / NodeJS</li>
+                        <li>APIs (Consumption & Creation)</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Scientific programming</p>
+                    <ul>
+                        <li>Python / Matlab / Scilab</li>
+                        <li>Machine Learning / Data Science</li>
+                        <li>Physics / Advanced Math / Statistics</li>
+                        <li>Numerical Differential Equations</li>
+                        <li>Computer Simulations</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Skills</p>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Cibersecurity</li>
+                        <li>SSH / Terminal</li>
+                        <li>Ubuntu / Kali </li>
+                        <li>Design (Functional & UI/UX)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="about-interesting-container" fxFlex="50%">
+            <h3>Interesting</h3>
+            <ul>
+                <li><a href="http://www.autodidacts.io/host-a-ghost-blog-on-heroku/" target="_blank">Host a Free Ghost Blog on Heroku</a></li>
+                <li><a href="http://blog.robertonodi.me/node-authentication-series-email-and-password/" target="_blank">Passport Authentication</a></li>
+                <li><a href="https://medium.com/@hellotunmbi/how-to-deploy-angular-application-to-heroku-1d56e09c5147">Deploy Angular App to Heroku</a></li>
+                <li><a href="https://scotch.io/tutorials/deploying-a-node-app-to-digital-ocean#clone-the-app-on-the-server" target="_blank">Deploy Node App on DigitalOcean VPS</a></li>
+                <li><a href="https://www.dataquest.io/blog/build-a-data-science-portfolio/" target="_blank">Tips On Data Science Portfolios</a></li>
+                <li><a href="https://github.com/d3/d3/wiki/Tutorials" target="_blank">D3 Tutorials</a></li>
+                <li><a href="https://blog.kissmetrics.com/open-graph-meta-tags/" target="_blank">Open Graph Meta Tags</a></li>
+                <li><a href="https://www.abeautifulsite.net/how-to-upgrade-or-downgrade-nodejs-using-npm" target="_blank">Easily downgrade NodeJS</a></li>
+                <li><a href="http://www.codetodd.com/creating-a-resizable-component-in-angular2/" target="_blank">Resizable Angular 5 components</a></li>
+                <li><a href="http://www.imagesmaller.com/" target="_blank">Optimize images</a></li>
+                <li><a href="https://medium.com/of-all-things-tech-progress/starting-with-authentication-a-tutorial-with-node-js-and-mongodb-25d524ca0359" target="_blank">Authentication</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="about-whatido-container" fxFlex="50%">
-        <h3>What I Do</h3>
-        <ul>
-            <li>
-                <p>Web Development</p>
-                <ul>
-                    <li>HTML / SCSS / Javascript</li>
-                    <li>PHP / Apache / MySQL</li>
-                    <li>.NET / C# / SQL Server</li>
-                    <li>MongoDB / Express / Angular 5+ / NodeJS</li>
-                    <li>APIs (Consumption & Creation)</li>
-                </ul>
-            </li>
-            <li>
-                <p>Scientific programming</p>
-                <ul>
-                    <li>Python / Matlab / Scilab</li>
-                    <li>Machine Learning / Data Science</li>
-                    <li>Physics / Advanced Math / Statistics</li>
-                    <li>Numerical Differential Equations</li>
-                    <li>Computer Simulations</li>
-                </ul>
-            </li>
-            <li>
-                <p>Skills</p>
-                <ul>
-                    <li>Object Oriented Programming</li>
-                    <li>Cibersecurity</li>
-                    <li>SSH / Terminal</li>
-                    <li>Ubuntu / Kali </li>
-                    <li>Design (Functional & UI/UX)</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="about-interesting-container" fxFlex="50%">
-        <h3>Interesting</h3>
-        <ul>
-            <li><a href="http://www.autodidacts.io/host-a-ghost-blog-on-heroku/" target="_blank">Host a Free Ghost Blog on Heroku</a></li>
-            <li><a href="http://blog.robertonodi.me/node-authentication-series-email-and-password/" target="_blank">Passport Authentication</a></li>
-            <li><a href="https://medium.com/@hellotunmbi/how-to-deploy-angular-application-to-heroku-1d56e09c5147">Deploy Angular App to Heroku</a></li>
-            <li><a href="https://scotch.io/tutorials/deploying-a-node-app-to-digital-ocean#clone-the-app-on-the-server" target="_blank">Deploy Node App on DigitalOcean VPS</a></li>
-            <li><a href="https://www.dataquest.io/blog/build-a-data-science-portfolio/" target="_blank">Tips On Data Science Portfolios</a></li>
-            <li><a href="https://github.com/d3/d3/wiki/Tutorials" target="_blank">D3 Tutorials</a></li>
-            <li><a href="https://blog.kissmetrics.com/open-graph-meta-tags/" target="_blank">Open Graph Meta Tags</a></li>
-            <li><a href="https://www.abeautifulsite.net/how-to-upgrade-or-downgrade-nodejs-using-npm" target="_blank">Easily downgrade NodeJS</a></li>
-            <li><a href="http://www.codetodd.com/creating-a-resizable-component-in-angular2/" target="_blank">Resizable Angular 5 components</a></li>
-            <li><a href="http://www.imagesmaller.com/" target="_blank">Optimize images</a></li>
-            <li><a href="https://medium.com/of-all-things-tech-progress/starting-with-authentication-a-tutorial-with-node-js-and-mongodb-25d524ca0359" target="_blank">Authentication</a></li>
-        </ul>
-    </div>
+    
 </section>
