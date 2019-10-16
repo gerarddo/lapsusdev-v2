@@ -9,11 +9,16 @@
         .portfolio-menu-btn {
             padding: 5px;
         }
-        span.active-menu-btn {
+
+        .portfolio-menu-btn a {
+            text-decoration: none;
+        }
+       
+        a.active-menu-btn {
             background-color: rgba(255,255,255,0.4);
             border: 1px solid white;
         }
-         // use media for the span padding
+        // use media for the span padding
         .portfolio-menu-btn-content-container {
             display: block;
             padding:  {

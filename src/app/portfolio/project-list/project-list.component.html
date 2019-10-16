@@ -2,21 +2,18 @@
 <div 
     class='project-list'
     fxLayout
+    fxFill 
     fxLayoutAlign="center start"
     fxLayout="row wrap" 
-    [style.height.px]="myInnerHeight"
     >
-
-    <!-- <cdk-virtual-scroll-viewport itemSize="200" class="viewport"> -->
-            <!--TODO: Add material card-->
-
-            <!-- <cdk-virtual-scroll-viewport [itemSize]="1000"> -->
-                    <app-project 
-                    fxFlex.gt-sm = "50%"
-                    *ngFor="let project of projects" 
-                    [project]="project"></app-project>
-            <!-- </cdk-virtual-scroll-viewport> -->
-        <!-- </cdk-virtual-scroll-viewport> -->
+    <!-- https://github.com/angular/components/issues/9613 -->
+        <!-- for a masonry grid -->
+        <app-project 
+        fxFlex.gt-sm = "50%"
+        fxLayout='column'
+        fxLayoutAlign='center start'
+        *ngFor="let project of projects" 
+        [project]="project"></app-project>
 
 </div>
 

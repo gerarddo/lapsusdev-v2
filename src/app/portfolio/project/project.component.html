@@ -5,12 +5,46 @@
         <div class='portfolio-project-img-container'>
             <app-image imageUrl={{project.img}}></app-image>
         </div>
-        <h2>{{project.name | uppercase}} Details</h2>
-        <h4>{{project.short_description}}</h4>
-        <div><span>description: </span>{{project.description}}</div>
-        <div><span>repo: </span>{{project.repo}}</div>
+        <h2 class='project-title'>{{project.name | uppercase}}</h2>
+        <h3 class='project-short-description'>{{project.short_description}}</h3>
+
+        <p class='project-description'>{{project.description}}</p>
+
+        <div 
+            class="portfolio-project-specs-container"
+            fxLayout
+            fxLayout='row wrap'
+            fxLayoutAlign='center start'>
+
+            <div 
+                class="portfolio-project-implements-list-container"
+                fxFlex.gt-xs='50%'
+                fxFlex.xs='100%'>
+                <h3>Implements</h3>
+                <ul>
+                    <li
+                        *ngFor="let implementation of project.implements">
+                        {{implementation}}
+                    </li>
+
+                </ul>
+            </div>
+            <div 
+                class="portfolio-project-stack-list-container"
+                fxFlex.gt-xs='50%'
+                fxFlex.xs='100%'>
+                <h3>Stack</h3>
+                <ul>
+                    <li
+                        *ngFor="let tech of project.stack">
+                        {{tech}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div><span>repo: </span>{{project.repo}}</div>
         <div><span>stack: </span>{{project.stack}}</div>
-        <div><span>url: </span>{{project.url}}</div>
+        <div><span>url: </span>{{project.url}}</div> -->
           
     </div>
 

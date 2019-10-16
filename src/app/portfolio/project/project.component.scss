@@ -5,16 +5,23 @@
         background-color: #333333;
         border-radius: 7px;
         
-        h2,h4 {
+        .project-title,
+        .project-short-description {
             text-align: center;
         }
-        h2 {
+        .project-title {
             color: white;
         }
-        h4  {
+        .project-short-description  {
             color: rgb(150,150,150);
+            font-style: oblique;
         }
         color: white;
+
+        .project-description {
+            font-size: 1.1em;
+            text-align: center;
+        }
         .portfolio-project-img-container {
             display: block;
             // padding: 10px;
