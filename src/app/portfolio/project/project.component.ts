@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-project',
@@ -12,6 +13,8 @@ export class ProjectComponent implements OnInit {
   constructor() {
 
   }
+
+  faExternalLinkAlt = faExternalLinkAlt;
 
   ngOnInit() {
   }

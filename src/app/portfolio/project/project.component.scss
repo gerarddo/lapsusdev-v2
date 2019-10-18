@@ -27,6 +27,30 @@
             // padding: 10px;
             // border-radius: 10px;
         }
+
+        .project-link {
+            text-decoration: none;
+        }
+        .project-link-icon {
+            color: steelblue;
+        }
+
+        .portfolio-project-implements-list-container,
+        .portfolio-project-stack-list-container {
+            h3 {
+                font-style: oblique;
+            }
+        }
+
+        p.project-repo {
+            text-align: center;
+            color: gray;
+            a {
+                color: steelblue;
+                text-decoration: none;
+                font-style: oblique;
+            }
+        }
     }
 }
 

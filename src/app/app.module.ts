@@ -19,7 +19,7 @@ import { ImageComponent } from './shared/image/image.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { MenuComponent } from './portfolio/menu/menu.component';
 
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -41,7 +41,8 @@ import { MenuComponent } from './portfolio/menu/menu.component';
     AppRoutingModule,
     FlexLayoutModule,
     LazyLoadImageModule,
-    ScrollingModule
+    ScrollingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

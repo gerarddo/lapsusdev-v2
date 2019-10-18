@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
+import { Router, NavigationEnd, Route, ActivatedRoute } from '@angular/router';
+
+
 let SCIENTIFICPROJECTS = [
   {
     name: 'Recreating Mona Lisa',
@@ -74,21 +77,15 @@ let WEBPROJECTS = [
 })
 export class ProjectsService {
 
-  constructor() { 
+
+  constructor(private router: Router, private route: ActivatedRoute) { 
     this.projects = WEBPROJECTS;
+    this.currentCategory = 'web';
   }
-
-  updateCategory(category: string): any {
-    if(category == 'web'){
-      this.setProjects(WEBPROJECTS);
-    } else if (category == 'scientific'){
-      this.setProjects(SCIENTIFICPROJECTS);
-    } else if (category == 'theoric'){
-      this.setProjects(THEORICPROJECTS);
-    }
-  }
-
+  
   projects: any[];
+  currentCategory: string;
+  
 
   setProjects(projects): void {
     this.projects = projects;
@@ -103,5 +100,14 @@ export class ProjectsService {
       this.setProjects(THEORICPROJECTS);
     }
     return of(this.projects);
+  }
+
+  setCurrentCategory(category: string): void{
+    console.log('Current category updated. Now set to: ' + category);
+    this.currentCategory = category;
+  }
+
+  getCurrentCategory(): string{
+    return this.currentCategory;
   }
 }
