@@ -12,6 +12,7 @@ let SCIENTIFICPROJECTS = [
     img: '../../../assets/images/monalisa.png',
     implements: ['Genetic Algorithms','Matrix Algebra','Triangle Rasterization','Vectorized code'],
     stack: ['Numpy', 'Matplotlib', 'Jupyter notebook'],
+    repo_name: 'genetic_algorithm_monalisa',
     repo: 'https://github.com/gerarddo/genetic_algorithm_monalisa',
     url: 'javascript:void(0)'
   },
@@ -22,6 +23,7 @@ let SCIENTIFICPROJECTS = [
     img: '../../../assets/images/mechanical_statistics_of_money.png',
     implements: ['Data visualization','Statistics','Vectorized code'],
     stack: ['Numpy', 'Matplotlib', 'Jupyter Notebook'],
+    repo_name: 'mechanical_statistics_of_money',
     repo: 'https://github.com/gerarddo/mechanical_statistics_of_money',
     url: 'javascript:void(0)'
   }
@@ -57,6 +59,7 @@ let WEBPROJECTS = [
     img: '../../../assets/images/nucleum-optimized.png',
     implements: ['Front made from scratch', 'API-based forecast', 'Mobile-friendly', 'Modal implementation', 'Responsive grids'],
     stack: ['NodeJS', 'EJS', 'Express'],
+    repo_name: 'nucleumproj',
     repo: 'https://github.com/gerarddo/nucleumproj',
     url: 'https://nucleumproj.herokuapp.com/'
   },
@@ -67,6 +70,7 @@ let WEBPROJECTS = [
     img: '../../../assets/images/filler-optimized.png',
     implements: ['HTTP-based API', 'SPA GUI', 'G-Code path simulator integrated','Server-side UT'],
     stack: ['NodeJS', 'Angular', 'Express','ngBootstrap','Moka'],
+    repo_name: 'filler-cidep',
     repo: 'https://github.com/gerarddo/filler-cidep',
     url: 'https://filler-cidep.herokuapp.com/'
   }
