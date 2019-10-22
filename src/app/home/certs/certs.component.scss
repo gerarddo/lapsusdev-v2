@@ -1,14 +1,14 @@
-#contact {
+#certs {
     // height: 100%;
     display: block;
-    .contact-info-container {
+    .certs-info-container {
         padding: 20px;
         color: white;
-        .contact-info-cell {
+        .certs-info-cell {
             padding: 20px;
-            p {
-                width: 100%;
-                display: block;
+            li {
+                // width: 100%;
+                // display: block;
                 color: rgb(200,200,200)
             }
             a {

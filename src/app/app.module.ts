@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './home/contact/contact.component';
+import { ContactComponent } from './shared/contact/contact.component';
 import { AboutComponent } from './home/about/about.component';
 
 import { ScrollingModule } from '@angular/cdk/scrolling';
@@ -20,6 +20,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { MenuComponent } from './portfolio/menu/menu.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CertsComponent } from './home/certs/certs.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ImageComponent,
     FooterComponent,
     MenuComponent,
+    CertsComponent,
   ],
   imports: [
     BrowserModule,
