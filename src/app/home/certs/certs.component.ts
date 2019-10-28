@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CertsService } from '../../certs.service';
+
 
 @Component({
   selector: 'app-certs',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private certsService: CertsService
+  ) { }
 
+  certs: Array<Object>;
   ngOnInit() {
+    this.certs = this.certsService.getCerts()
+
+    
   }
 
 }

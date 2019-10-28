@@ -3,32 +3,16 @@
     fxFill
     class="lapsusdev-velvet" 
     id="certs">
-    <div class="certs-info-container"  fxLayout="column" fxLayoutAlign='space-evenly start'>
-        <div class="certs-info-cell">
-            <h1>CeroUno</h1>
+    <div 
+        class="certs-info-container"  
+        fxLayout="column" 
+        fxLayoutAlign='space-evenly start'
+        >
+
+        <div class="cert-info-cell" *ngFor="let cert of certs">
+            <h1><a href="{{cert.emitter_url}}" target='_blank'>{{cert.emitter_name}}</a></h1>
             <ul>
-                <li>Cibersecurity</li>
-            </ul>
-        </div>
-        <div class="certs-info-cell">
-            <h1>Northware</h1>
-            <ul>
-                <li>SQL Beginner</li>
-                <li>SQL Intermediate</li>
-                <li>SQL Advanced</li>
-            </ul>
-        </div>
-        <div class="certs-info-cell">
-            <h1>Udemy</h1>
-            <ul>
-                <li>The web developer bootcamp</li>
-                <li>Become a good matlab programmer in 30 days</li>
-            </ul>
-        </div>
-        <div class="certs-info-cell">
-            <h1>Other</h1>
-            <ul>
-                <li>Curriculum Vitae</li>
+                <li *ngFor="let emitted of cert.emitted"><a href="{{emitted.url}}" target='_blank'>{{emitted.name}}</a></li>
             </ul>
         </div>
     </div>

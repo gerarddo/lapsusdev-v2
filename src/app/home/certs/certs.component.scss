@@ -3,18 +3,32 @@
     display: block;
     .certs-info-container {
         padding: 20px;
-        color: white;
-        .certs-info-cell {
+
+        
+        .cert-info-cell {
             padding: 20px;
+            h1 {
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
             li {
                 // width: 100%;
                 // display: block;
-                color: rgb(200,200,200)
+                color: rgb(200,200,200);
+                a {
+                    color: rgb(200,200,200);
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
             }
-            a {
-                text-decoration: underline;
-                color: rgb(200,200,200)
-            }
+
         }
     }
 }
