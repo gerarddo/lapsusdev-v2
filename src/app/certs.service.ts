@@ -6,9 +6,9 @@ let CERTIFICATES = [
     emitter_url: 'https://www.cerouno.io',
     emitted: [
       {
-        name: 'Cibersecurity (pending)',
+        name: 'Cybersecurity',
         stack: ['Kali linux', 'Network scanning', 'Social engineering','Forensics analyisis', 'Web App Security', 'Passive/Active sniffing', 'Federal Data Protection law'],
-        url: '../../../assets/certs/pending_certificate.pdf'
+        url: '../../../assets/certs/cybersecurity_cert.png'
       }
     ]
   },
@@ -49,7 +49,7 @@ let CERTIFICATES = [
         url: '../../../assets/certs/UC-1KXZVZ6L.pdf'
       },
       {
-        name: 'SQL Advanced',
+        name: 'Become a Good Matlab programmer in less than 30 days',
         stack: ['Plotting', 'Vectorized code', 'Matrix algebra', 'Complex algebra', 'Numeric calculus'],
         url: '../../../assets/certs/UC-1LMM8VFI.pdf'
       },
