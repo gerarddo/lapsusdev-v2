@@ -12,9 +12,9 @@ let SCIENTIFICPROJECTS = [
     img: '../../../assets/images/monalisa.png',
     implements: ['Genetic Algorithms','Matrix Algebra','Triangle Rasterization','Vectorized code'],
     stack: ['Numpy', 'Matplotlib', 'Jupyter notebook'],
-    repo_name: 'genetic_algorithm_monalisa',
-    repo: 'https://github.com/gerarddo/genetic_algorithm_monalisa',
-    url: 'javascript:void(0)'
+    repo_name: 'gioconda-reconstruction',
+    repo: 'https://github.com/gerarddo/gioconda-reconstruction',
+    url: 'https://www.youtube.com/watch?v=8Frn09aKMqI'
   },
   {
     name: 'Mechanical Statistics of Money Simulation',
@@ -84,7 +84,7 @@ export class ProjectsService {
 
   constructor(private router: Router, private route: ActivatedRoute) { 
     this.projects = WEBPROJECTS;
-    this.currentCategory = 'web';
+    this.currentCategory = 'scientific';
   }
   
   projects: any[];
