@@ -16,8 +16,8 @@ export class CertsComponent implements OnInit {
   certs: Array<Object>;
   ngOnInit() {
     this.certs = this.certsService.getCerts()
-
-    
   }
+
+
 
 }
