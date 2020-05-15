@@ -13,7 +13,7 @@ let SCIENTIFICPROJECTS = [
     implements: ['Genetic Algorithms','Matrix Algebra','Triangle Rasterization','Vectorized code'],
     stack: ['Numpy', 'Matplotlib', 'Jupyter notebook'],
     repo_name: 'gioconda-reconstruction',
-    repo: 'https://github.com/gerarddo/gioconda-reconstruction',
+    repo: 'https://www.github.com/gerarddo/gioconda-reconstruction',
     url: 'https://www.youtube.com/watch?v=8Frn09aKMqI'
   },
   {
@@ -24,7 +24,7 @@ let SCIENTIFICPROJECTS = [
     implements: ['Data visualization','Statistics','Vectorized code'],
     stack: ['Numpy', 'Matplotlib', 'Jupyter Notebook'],
     repo_name: 'mechanical_statistics_of_money',
-    repo: 'https://github.com/gerarddo/mechanical_statistics_of_money',
+    repo: 'https://www.github.com/gerarddo/mechanical_statistics_of_money',
     url: 'javascript:void(0)'
   }
 ];
@@ -60,7 +60,7 @@ let WEBPROJECTS = [
     implements: ['Front made from scratch', 'API-based forecast', 'Mobile-friendly', 'Modal implementation', 'Responsive grids'],
     stack: ['NodeJS', 'EJS', 'Express'],
     repo_name: 'nucleumproj',
-    repo: 'https://github.com/gerarddo/nucleumproj',
+    repo: 'https://www.github.com/gerarddo/nucleumproj',
     url: 'https://nucleumproj.herokuapp.com/'
   },
   {
@@ -71,7 +71,7 @@ let WEBPROJECTS = [
     implements: ['HTTP-based API', 'SPA GUI', 'G-Code path simulator integrated','Server-side UT'],
     stack: ['NodeJS', 'Angular', 'Express','ngBootstrap','Moka'],
     repo_name: 'filler-cidep',
-    repo: 'https://github.com/gerarddo/filler-cidep',
+    repo: 'https://www.github.com/gerarddo/filler-cidep',
     url: 'https://filler-cidep.herokuapp.com/'
   }
 ];
